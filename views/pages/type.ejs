@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+    <ol>
+        <% bookType.forEach(book => { %>
+            <li class="typeWrapper">
+                <img class = 'bookCover'src="<%= book.imgUrl %>"  alt="book cover">
+                <h1 class = 'bookTitle'><%= book.title %></h1>
+                <p class = "bookAuthor"><%= book.author %></p>
+            </li>
+        <% }); %> 
+    </ol>
+<%- include('../partials/footer') %> 

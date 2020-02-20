@@ -1,0 +1,87 @@
+ol {
+    padding: 10px;
+}
+
+.songList {
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    grid-template-rows: 80% 20%;
+    border-bottom: 1px solid black;
+    grid-template-areas:
+    'rank titleArtist .'
+    'streams . pubDate';
+}
+
+.rank {
+    grid-area: rank;
+    font-size: xx-large;
+    text-align: center;
+    margin: 1em;
+}
+
+.titleArtist {
+    grid-area: titleArtist;
+    margin: 1em;
+}
+.title {
+    font-weight: bold;
+}
+.artist {
+    font-style: italic;;
+}
+
+.streams {
+    grid-area: streams;
+    text-align: center;
+    font-size: small;
+}
+
+.pubDate {
+    grid-area: pubDate;
+    font-size: small;
+}
+
+.copy {
+    text-align: left;
+    grid-area: copywrite;
+}
+
+.title {
+    font-weight: bold;
+    grid-area: title;
+}
+
+.author {
+    font-style: italic;
+    grid-area: author;
+}
+
+.type {
+    font-size: small;
+    grid-area: type;
+}
+
+.description {
+    font-weight: lighter;
+    grid-area: description;
+}
+
+.id {
+    font-size: small;
+    grid-area: id;
+}
+
+.image {
+    grid-area: img;
+}
+
+.bookList {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 95% 5%;
+    grid-template-areas:
+    'img copywrite'
+    'id .';
+    border-bottom: 1px solid black;
+    align-items: center;
+}

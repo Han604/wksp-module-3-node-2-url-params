@@ -349,5 +349,4 @@ const top50 = [
         publicationDate: '28-Aug-15'
     },
 ];
-
 module.exports = { top50 };

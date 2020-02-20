@@ -1,0 +1,24 @@
+<%- include('../partials/header') %> 
+<% 
+let artistCount = {};
+let artistRank = [];
+topSongs.forEach(song => {
+    let count = 0;
+        topSongs.forEach(duplicate => {
+            if (song.artist === duplicate.artist){
+                count += 1
+            }
+        });
+        artistCount[song.artist] = count;
+})
+Object.values(artistCount.forEach((numCount){
+    const artistName = Object.keys(artistCount);
+    artistRank.push({
+        artistName: artistName
+        numCount: numCount
+    });
+});
+);
+console.log(art)
+%> 
+<%- include('../partials/footer') %>

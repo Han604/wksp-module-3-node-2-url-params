@@ -1,0 +1,22 @@
+.typeWrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30px 30px;
+    grid-template-areas: 
+    'bookCover bookTitle'
+    'bookCover bookAuthor';
+    height: 100px;
+    border-bottom: 1px solid grey;
+}
+
+.bookCover {
+    grid-area: bookCover;
+}
+
+.bookTitle {
+    grid-area: bookTitle;
+}
+
+.bookAuthor {
+    grid-area: bookAuthor;
+}

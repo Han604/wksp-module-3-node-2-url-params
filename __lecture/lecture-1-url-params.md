@@ -27,6 +27,10 @@ app.get('/question10', q10)
 ```js
 // ...
 
+app.get('/question/:number', (req, res) => {
+    const number = req.params.number;
+});
+
 ```
 
 </div></div>
