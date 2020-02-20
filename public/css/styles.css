@@ -83,6 +83,118 @@ codeblock {
   margin: 12px 32px 6px 0;
   padding: 12px 14px; }
 
+ol {
+  padding: 10px; }
+
+.songList {
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
+  grid-template-rows: 80% 20%;
+  border-bottom: 1px solid black;
+  grid-template-areas: 'rank titleArtist .' 'streams . pubDate'; }
+
+.rank {
+  grid-area: rank;
+  font-size: xx-large;
+  text-align: center;
+  margin: 1em; }
+
+.titleArtist {
+  grid-area: titleArtist;
+  margin: 1em; }
+
+.title {
+  font-weight: bold; }
+
+.artist {
+  font-style: italic; }
+
+.streams {
+  grid-area: streams;
+  text-align: center;
+  font-size: small; }
+
+.pubDate {
+  grid-area: pubDate;
+  font-size: small; }
+
+.copy {
+  text-align: left;
+  grid-area: copywrite; }
+
+.title {
+  font-weight: bold;
+  grid-area: title; }
+
+.author {
+  font-style: italic;
+  grid-area: author; }
+
+.type {
+  font-size: small;
+  grid-area: type; }
+
+.description {
+  font-weight: lighter;
+  grid-area: description; }
+
+.id {
+  font-size: small;
+  grid-area: id; }
+
+.image {
+  grid-area: img; }
+
+.bookList {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 95% 5%;
+  grid-template-areas: 'img copywrite' 'id .';
+  border-bottom: 1px solid black;
+  align-items: center; }
+
+.songWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  height: 400px;
+  width: 400px;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin: auto; }
+
+.top50title {
+  position: relative;
+  border-bottom: 1px solid grey;
+  width: 80%;
+  text-align: center; }
+
+.top50artist {
+  position: relative; }
+
+.top50streams {
+  font-size: 200px;
+  color: grey;
+  position: relative;
+  font-weight: bolder; }
+
+.typeWrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 'bookCover bookTitle' 'bookCover bookAuthor'; }
+
+.bookCover {
+  grid-area: bookCover; }
+
+.bookTitle {
+  grid-area: bookTitle; }
+
+.bookAuthor {
+  grid-area: bookAuthor; }
+
 body {
   background: #fafafa;
   display: flex;

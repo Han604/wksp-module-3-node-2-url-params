@@ -1,0 +1,10 @@
+.copy {
+  text-align: left;
+  grid-area: copy; }
+
+.title {
+  font-weight: bold;
+  grid-area: title; }
+
+.author {
+  font-style: italic; }
